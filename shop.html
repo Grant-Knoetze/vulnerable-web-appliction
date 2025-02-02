@@ -1,0 +1,53 @@
+<!-- Shop Page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <script>checkLogin();</script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <!--Container wrapper-->
+        <div class="container-fluid">
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!--Left links-->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="admin.html">Admin</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">Shop</a>
+                    </li>
+                </ul>
+                <!--Left links-->
+            </div>
+            <!-- Collapsible wrapper -->
+    </nav>
+    <!-- Navbar -->
+    <h1>Shop</h1>
+    <p>Welcome to our vulnerable e-commerce section.</p>
+    <ul>
+        <li>Item 1 - $10 <button onclick="buyItem(1)">Buy</button></li>
+        <li>Item 2 - $20 <button onclick="buyItem(2)">Buy</button></li>
+    </ul>
+    <p><a href="index.html">Back to Home</a></p>
+    <script>
+        function buyItem(itemId) {
+            alert("Purchased item " + itemId + " (vulnerable to CSRF)");
+        }
+    </script>
+</body>
+</html>
