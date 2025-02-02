@@ -17,4 +17,5 @@ o	Hardcoded credentials (admin / password) make it easy to guess.
 o	If an admin panel exists at /admin, there’s no access control.
 5.	Security Misconfiguration
 o	Missing proper input validation and no security headers.
+* This web application is vulnerable web app and I have added a new sentence.
 
