@@ -6,16 +6,16 @@ Included Vulnerabilities:
 3.	Broken Authentication
 4.	Insecure Direct Object References (IDOR)
 5.	Security Misconfiguration
-How to Exploit the Vulnerabilities
+# How to Exploit the Vulnerabilities
 1.	SQL Injection (SQLi)
-o	Try entering admin' -- as the username and see if it bypasses authentication.
+* Try entering admin' -- as the username and see if it bypasses authentication.
 2.	Cross-Site Scripting (XSS)
-o	Post a comment like <script>alert('Hacked!')</script> and see if it executes.
+* Post a comment like <script>alert('Hacked!')</script> and see if it executes.
 3.	Broken Authentication
-o	Hardcoded credentials (admin / password) make it easy to guess.
+* Hardcoded credentials (admin / password) make it easy to guess.
 4.	Insecure Direct Object References (IDOR)
-o	If an admin panel exists at /admin, there’s no access control.
+* If an admin panel exists at /admin, there’s no access control.
 5.	Security Misconfiguration
-o	Missing proper input validation and no security headers.
+* Missing proper input validation and no security headers.
 * This web application is vulnerable web app and I have added a new sentence.
 
