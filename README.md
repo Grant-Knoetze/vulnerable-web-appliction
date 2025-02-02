@@ -17,5 +17,5 @@ Included Vulnerabilities:
 * If an admin panel exists at /admin, there’s no access control.
 5.	Security Misconfiguration
 * Missing proper input validation and no security headers.
-* This web application is vulnerable web app and I have added a new sentence.
+
 
